@@ -1,4 +1,4 @@
-import ipdb
+# import ipdb
 import pytest
 
 from pytest_twisted import async_yield_fixture
@@ -21,26 +21,3 @@ async def tahoe_server(tmp_path_factory):
     await server.start()
     yield server
     await server.stop()
-
-
-# @async_yield_fixture(scope="module")
-# async def tahoe_client(tmp_path_factory, tahoe_server):
-#     client = Tahoe(tmp_path_factory.mktemp("tahoe_client") / "nodedir")
-#     settings = {
-#         "nickname": "Test Grid",
-#         "shares-needed": "1",
-#         "shares-happy": "1",
-#         "shares-total": "1",
-#         "convergence": "a" * 52,
-#         "storage": {
-#             "test-grid-storage-server-1": {
-#                 "nickname": "test-grid-storage-server-1",
-#                 "anonymous-storage-FURL": tahoe_server.storage_furl,
-#             }
-#         },
-#     }
-#     await client.create_client(settings)
-#     client.save_settings(settings)
-#     await client.start()
-#     yield client
-#     await client.stop()
