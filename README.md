@@ -15,5 +15,5 @@ It is not defined [anywhere else](https://imgur.com/carbon-110dlO2)
 
 ## Steps to reproduce
 1. Clone the repo and navigate to the gridsync_dependency directory
-2. run `uv run pytest` ([requires uv](https://docs.astral.sh/uv/))
+2. Run pytest: `uv run pytest` ([requires uv](https://docs.astral.sh/uv/))
 3. You should see the error described above!
