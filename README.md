@@ -9,6 +9,7 @@ But the Tahoe object [does have such a method](https://github.com/gridsync/grids
 
 It is not defined anywhere else:
 ![An image of a terminal running the 'rg create_node' command on the gridsync source code](https://imgur.com/carbon-110dlO2 "Carbon image")
+<blockquote class="imgur-embed-pub" lang="en" data-id="110dlO2"  ><a href="//imgur.com/110dlO2">carbon</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 ## Steps to reproduce
 1. Clone the repo and navigate to the gridsync_dependency directory
 2. run `uv run pytest` ([requires uv](https://docs.astral.sh/uv/))
