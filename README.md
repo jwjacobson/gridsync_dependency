@@ -8,7 +8,7 @@ Line 19 attempts to call Tahoe's create_node() method, leading to an error: `ERR
 But the Tahoe object [does have such a method](https://github.com/gridsync/gridsync/blob/29edd61fa7dbd856fe757f0f11e911ebf6a44cab/gridsync/tahoe.py#L420)!
 
 It is not defined anywhere else:
-![An image of a terminal running the 'rg create_node' command on the gridsync source code] (https://imgur.com/carbon-110dlO2 "Carbon image")
+![An image of a terminal running the 'rg create_node' command on the gridsync source code](https://imgur.com/carbon-110dlO2 "Carbon image")
 ## Steps to reproduce
 1. Clone the repo and navigate to the gridsync_dependency directory
 2. run `uv run pytest` ([requires uv](https://docs.astral.sh/uv/))
