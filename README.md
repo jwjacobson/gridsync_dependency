@@ -1,9 +1,11 @@
 # gridsync_dependency
 ## Goal:
-Can we install gridsync as a project dependency and make use of its Tahoe object?
+We want to install gridsync as a project dependency and make use of its Tahoe object in [Private Facts](https://github.com/blaisep/private_facts).
+
+This repo will document and help troubleshoot issues with the process.
 
 ## Current error: why does Tahoe have no create_node method?
-Line 14 of conftest.py successfully creates a Tahoe object called server.
+Line 14 of test/conftest.py successfully creates a Tahoe object called server.
 
 Line 19 attempts to call the object's create_node() method, leading to an error:
 
