@@ -16,6 +16,6 @@ But the Tahoe object [does have such a method](https://github.com/gridsync/grids
 It is not defined [anywhere else](https://imgur.com/carbon-110dlO2)
 
 ## Steps to reproduce
-1. Clone the repo and navigate to the gridsync_dependency directory
+1. Clone the repo and navigate to the gridsync_dependency directoryx
 2. Run pytest: `uv run pytest` ([requires uv](https://docs.astral.sh/uv/))
 3. You should see the error described above!

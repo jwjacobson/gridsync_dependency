@@ -3,11 +3,14 @@ name = "gridsync-dep"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.11"
 dependencies = [
-    "gridsync>=0.4.3",
-    "ipdb>=0.13.13",
+    "gridsync @ git+https://github.com/gridsync/gridsync@main",
+    "pyqt6>=6.9.0",
     "pytest>=8.3.5",
     "pytest-twisted>=1.14.3",
     "python-decouple>=3.8",
+    "qtpy>=2.4.3",
+    "tahoe-lafs>=1.20.0",
 ]
+
