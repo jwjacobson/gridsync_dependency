@@ -3,15 +3,15 @@
 It is in fact possible to use gridsync in this way, but we will no longer be pursuing this path!
 
 There were two major issues:
-1. The [gridsync package on PyPI](https://pypi.org/project/gridsync/) is rather out of date, at version 0.4.3 instead of the latest 0.6.1. This was solved by building Gridsync directly from its Github repo.
-2. After updating, the blocking issue appears to have been a Python version mismatch; we were using Python 3.13, but gridsync only supports up to 3.11.
+1. The [gridsync package on PyPI](https://pypi.org/project/gridsync/) is rather out of date, at version 0.4.3 instead of the latest 0.6.1. We got around this by building Gridsync directly from its Github repo instead of installing it from PyPI.
+2. After updating, the blocking issue appears to have been a Python version mismatch; we were using Python 3.13, but gridsync only supports up to 3.11 (3.9 for PyPI gridsync!).
 
 Making these two changes allowed our toy test to run successfully.
 
 The reason we will not be pursuing this further is that Gridsync is a full desktop app and not a library, and using it for its Tahoe object involves pulling in a lot of unused and irrelevant dependencies, like QT. Instead we will focus on adapting the Tahoe module to work without the rest of Gridsync.
 
 ## Goal:
-We want to install [Gridsync](https://github.com/gridsync/gridsync) as a project dependency and make use of its Tahoe object in [Private Facts](https://github.com/blaisep/private_facts).
+We want to install [Gridsync](https://github.com/gridsync/gridsync) as a project dependency and make use of its Tahoe object in [Private Facts](https://github.com/blaisep/private_facts), in particular for integration tests.
 
 This repo will document and help troubleshoot issues with the process.
 
