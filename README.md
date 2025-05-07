@@ -1,3 +1,5 @@
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/jwjacobson/gridsync_dependency/main.svg)](https://results.pre-commit.ci/latest/github/jwjacobson/gridsync_dependency/main)
+
 # gridsync_dependency - using Gridsync for its Tahoe object
 ## Update 2025-04-29
 It is in fact possible to use gridsync in this way, but we will no longer be pursuing this path!
